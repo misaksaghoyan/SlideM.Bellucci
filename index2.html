@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>index2</title>
+    <style>
+        body{
+            background-color: black;
+        }
+    
+    </style>
+</head>
+<body>
+    
+   <div class="w3-content w3-section w3-center" style="max-width:500px"> 
+    
+    
+   <img class="mySlides w3-animate-fading" src="imgmonicabelucci/malena.jpg" style="width:50%">
+   <img class="mySlides w3-animate-fading" src="imgmonicabelucci/mb.jpg" style="width:50%">
+   <img class="mySlides w3-animate-fading" src="imgmonicabelucci/mb12.jpg" style="width:50%">
+   <img class="mySlides w3-animate-fading" src="imgmonicabelucci/mb13.jpg" style="width:50%">
+   <img class="mySlides w3-animate-fading" src="imgmonicabelucci/mb14.jpg" style="width:50%">
+   <img class="mySlides w3-animate-fading" src="imgmonicabelucci/mb15.webp" style="width:50%">
+   <img class="mySlides w3-animate-fading" src="imgmonicabelucci/mb16.webp" style="width:50%">
+   <img class="mySlides w3-animate-fading" src="imgmonicabelucci/monica-bellucci11.webp" style="width:50%">
+   <img class="mySlides w3-animate-fading" src="imgmonicabelucci/mbelucci.jpg" style="width:50%">
+   <img class="mySlides w3-animate-fading" src="imgmonicabelucci/mb9.jpg" style="width:50%">
+   <img class="mySlides w3-animate-fading" src="imgmonicabelucci/mbelucci2.jpg" style="width:50%">
+   <img class="mySlides w3-animate-fading" src="imgmonicabelucci/mbelucci3.jpg" style="width:50%">
+   <img class="mySlides w3-animate-fading" src="imgmonicabelucci/mbelucci6.jpg  " style="width:50%">
+   
+ </div>
+ <script>
+   var myIndex = 0;
+   carousel();
+
+   function carousel() {
+     var i;
+     var x = document.getElementsByClassName("mySlides");
+     for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+     }
+     myIndex++;
+     if (myIndex > x.length) { myIndex = 1 }
+     x[myIndex - 1].style.display = "block";
+     setTimeout(carousel, 7000);
+   }
+ </script><br>
+</body>
+</html>
